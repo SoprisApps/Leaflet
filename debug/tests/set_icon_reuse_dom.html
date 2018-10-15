@@ -21,18 +21,18 @@
 
 	marker.on('dragstart', function () {
 		console.log('dragstart');
-		marker.setIcon(redIcon);
+		// marker.setIcon(redIcon);
 		//This is the previous workaround:
-		//var iconElem = L.DomUtil.get(marker._icon);
-		//iconElem.src = 'http://www.webatlas.no/webatlasapi/v/071009/media/interface/default/markers/flag_red.gif';
+		var iconElem = L.DomUtil.get(marker._icon);
+		iconElem.src = 'http://www.webatlas.no/webatlasapi/v/071009/media/interface/default/markers/flag_red.gif';
 	});
 
 	marker.on('dragend', function () {
 		console.log('dragend');
-		marker.setIcon(blueIcon);
+		// marker.setIcon(blueIcon);
 		//This is the previous workaround:
-		//var iconElem = L.DomUtil.get(marker._icon);
-		//iconElem.src = 'http://www.webatlas.no/webatlasapi/v/071009/media/interface/default/markers/flag_blue.gif';
+		var iconElem = L.DomUtil.get(marker._icon);
+		iconElem.src = 'http://www.webatlas.no/webatlasapi/v/071009/media/interface/default/markers/flag_blue.gif';
 
 	});
 

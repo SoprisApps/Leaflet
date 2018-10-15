@@ -124,7 +124,7 @@ export var TileLayer = GridLayer.extend({
 		this._url = url;
 
 		if (!noRedraw) {
-			this.redraw();
+			// this.redraw();
 		}
 		return this;
 	},
